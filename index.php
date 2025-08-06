@@ -7,3 +7,5 @@ $city = 'Osasco';
 $days = 3;
 
 $results = API::get($city, $days);
+echo '<pre>';
+print_r($results);
