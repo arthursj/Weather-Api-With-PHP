@@ -6,7 +6,7 @@ class Api {
         $curl = curl_init();
         
         curl_setopt_array($curl, [
-          CURLOPT_URL => "http://api.weatherapi.com/v1/forecast.json?key=%203ac4069bfd5246ac938174822251107&q=London&days=5&aqi=no&alerts=no",
+          CURLOPT_URL => "http://api.weatherapi.com/v1/forecast.json?key=" . API_KEY . "&q=London&days=5&aqi=no&alerts=no",
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_ENCODING => "",
           CURLOPT_MAXREDIRS => 10,
