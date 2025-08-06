@@ -30,3 +30,14 @@ $current['temperature'] = $data['current']['temp_c'];
 $current['condition'] = $data['current']['condition']['text'];
 $current['condition_icon'] = $data['current']['condition']['icon'];
 $current['wind_speed'] = $data['current']['wind_kph'];
+
+// forecast weather data
+
+$forecast = [];
+foreach($data['forecast']['forecastday'] as $day) {
+    $forescast_day = [];
+    $forescast_day['info'] = null;
+    $forescast_day['date'] = $day['date'];  
+    $forescast_day['condition'] = $day['day']['condition']['text'];
+    $forescast_day['condition_icon'] = $day['day']['condition']['icon'];      
+}
