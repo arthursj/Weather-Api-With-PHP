@@ -5,3 +5,5 @@ require_once 'inc/api.php';
 
 $city = 'Osasco';
 $days = 3;
+
+$results = API::get($city, $days);
