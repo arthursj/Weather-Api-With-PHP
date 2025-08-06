@@ -23,3 +23,10 @@ $location['country'] = $data['location']['country'];
 $location['latitude'] = $data['location']['lat'];
 $location['longitude'] = $data['location']['lon'];
 $location['current_time'] = $data['location']['localtime'];
+
+// current weather data 
+$current = [];
+$current['temperature'] = $data['current']['temp_c'];
+$current['condition'] = $data['current']['condition']['text'];
+$current['condition_icon'] = $data['current']['condition']['icon'];
+$current['wind_speed'] = $data['current']['wind_kph'];
