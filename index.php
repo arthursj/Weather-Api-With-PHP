@@ -15,5 +15,11 @@ if($results['status'] == 'error'){
 
 $data = json_decode($results['data'], true);
 
-echo '<pre>';
-print_r($data);
+# location data
+$location = [];
+$location['name'] = $data['location']['name'];
+$location['region'] = $data['location']['region'];
+$location['country'] = $data['location']['country'];
+$location['latitude'] = $data['location']['lat'];
+$location['longitude'] = $data['location']['lon'];
+$location['current_time'] = $data['location']['localtime'];
