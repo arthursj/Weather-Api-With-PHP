@@ -31,6 +31,12 @@ class Api
                 'message' => $err,
                 'data' => null
             ];
-        } else {}
+        } else {
+          return [
+            'status' => 'success',
+            'message' => null,
+            'data' => $response
+          ];            
+        }
     }
 }
