@@ -58,7 +58,8 @@ foreach($data['forecast']['forecastday'] as $day) {
     <div class="container-fluid mt-5">
         <div class="row justify-content-center mt-5">
             <div class="col-10 p-5 bg-light text-black">
-                <h3>Tempo para a cidade <strong></strong></h3>
+                <h3>Tempo para a cidade <strong><?= $city ?></strong></h3>
+                <br>
             </div>
         </div>
     </div>
