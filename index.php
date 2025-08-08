@@ -27,6 +27,7 @@ $location['current_time'] = $data['location']['localtime'];
 
 // current weather data 
 $current = [];
+$current['info'] = 'Nesse momento:';
 $current['temperature'] = $data['current']['temp_c'];
 $current['condition'] = $data['current']['condition']['text'];
 $current['condition_icon'] = $data['current']['condition']['icon'];
