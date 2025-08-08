@@ -60,6 +60,12 @@ foreach($data['forecast']['forecastday'] as $day) {
             <div class="col-10 p-5 bg-light text-black">
                 <h3>Tempo para a cidade <strong><?= $city ?></strong></h3>
                 <br>
+
+                <!-- current -->
+                <?php
+                   $weather_info = $current;
+                   include 'inc/weather_info.php' 
+                ?>
             </div>
         </div>
     </div>
