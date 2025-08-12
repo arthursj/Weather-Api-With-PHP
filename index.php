@@ -67,6 +67,14 @@ foreach($data['forecast']['forecastday'] as $day) {
                    $weather_info = $current;
                    include 'inc/weather_info.php' 
                 ?>
+
+                <!-- forecast -->
+                <?php foreach($forecast as $day) : ?>
+                    <?php
+                        $weather_info = $day;
+                        include 'inc/weather_info.php'; 
+                    ?>
+                <?php endforeach ?>
             </div>
         </div>
     </div>
