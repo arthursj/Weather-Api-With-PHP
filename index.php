@@ -65,6 +65,19 @@ foreach($data['forecast']['forecastday'] as $day) {
                         <h3>Tempo para a cidade <strong><?= $location['name'] ?></strong></h3>
                         <p class="my-2">Região: <?= $location['region'] ?> | <?= $location['country'] ?> | <?= $location['current_time'] ?> | Previsão para: <strong><?= $days ?> dias</strong></p>
                     </div>
+                        <div class="col-3 text-end">
+                            <select class="form-select">
+                                <option value="Osasco">Osasco</option>
+                                <option value="Lisbon">Lisboa</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Paris">Paris</option>
+                                <option value="London">Londres</option>
+                                <option value="Berlin">Berlin</option>
+                                <option value="Brasilia">Brasilia</option>
+                                <option value="Maputo">Maputo</option>
+                                <option value="Luanda">Luanda</option>
+                            </select>
+                        </div>
                 </div>
 
                 <br>
