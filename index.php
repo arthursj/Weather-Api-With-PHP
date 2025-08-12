@@ -59,7 +59,14 @@ foreach($data['forecast']['forecastday'] as $day) {
     <div class="container-fluid mt-5">
         <div class="row justify-content-center mt-5">
             <div class="col-10 p-5 bg-light text-black">
-                <h3>Tempo para a cidade <strong><?= $city ?></strong></h3>
+
+                <div class="row">
+                    <div class="col-9">
+                        <h3>Tempo para a cidade <strong><?= $location['name'] ?></strong></h3>
+                        <p class="my-2">Região: <?= $location['region'] ?> | <?= $location['country'] ?> | <?= $location['current_time'] ?> | Previsão para: <strong><?= $days ?> dias</strong></p>
+                    </div>
+                </div>
+
                 <br>
 
                 <!-- current -->
