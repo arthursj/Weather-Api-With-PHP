@@ -17,5 +17,17 @@
         <div class="me-5">
             <?= $weather_info['condition'] ?>
         </div>
+
+        <?php if(!empty($weather_info['max_temp'])) : ?>
+            <div class="me-5">
+                Dia: <?= $weather_info['date'] ?>
+            </div>
+            <div class="me-5">
+                Temperatura máxima: <?= $weather_info['max_temp'] ?>&deg;
+            </div>
+            <div class="me-5">
+                Temperatura mínima: <?= $weather_info['min_temp'] ?>&deg;
+            </div>
+        <?php endif; ?>
     </div>
 </div>
