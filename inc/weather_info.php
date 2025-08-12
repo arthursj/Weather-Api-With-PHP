@@ -12,6 +12,10 @@
             <div class="me-5">
                 <h3><?= $weather_info['temperature'] ?>&deg;</h3>
             </div>
-        <?php endif; ?>    
+        <?php endif; ?>
+        
+        <div class="me-5">
+            <?= $weather_info['condition'] ?>
+        </div>
     </div>
 </div>
