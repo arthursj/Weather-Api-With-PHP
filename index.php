@@ -48,6 +48,13 @@ foreach($data['forecast']['forecastday'] as $day) {
     $forescast_day['condition_icon'] = $day['day']['condition']['icon'];      
 }
 
+function city_selected($city, $selected_city) {
+    if($city == $selected_city) {
+        return 'selected';
+    }
+    return '';
+}
+
 ?>
 
 <!DOCTYPE html>
