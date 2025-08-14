@@ -101,6 +101,9 @@ foreach($data['forecast']['forecastday'] as $day) {
 
     <script>
         const select = document.querySelector('select');
+        select.addEventListener('change', (e) => {
+            const city = e.target.value;
+        })
     </script>
     
 </body>
