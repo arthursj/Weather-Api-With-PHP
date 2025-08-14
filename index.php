@@ -78,15 +78,15 @@ function city_selected($city, $selected_city) {
                     </div>
                         <div class="col-3 text-end">
                             <select class="form-select">
-                                <option value="Osasco">Osasco</option>
-                                <option value="Lisbon">Lisboa</option>
-                                <option value="Madrid">Madrid</option>
-                                <option value="Paris">Paris</option>
-                                <option value="London">Londres</option>
-                                <option value="Berlin">Berlin</option>
-                                <option value="Brasilia">Brasilia</option>
-                                <option value="Maputo">Maputo</option>
-                                <option value="Luanda">Luanda</option>
+                                <option value="Osasco" <?= city_selected('Osasco', $city) ?>>Osasco</option>
+                                <option value="Lisbon" <?= city_selected('Lisbon', $city) ?>>Lisboa</option>
+                                <option value="Madrid" <?= city_selected('Madrid', $city) ?>>Madrid</option>
+                                <option value="Paris" <?= city_selected('Paris', $city) ?>>Paris</option>
+                                <option value="London" <?= city_selected('London', $city) ?>>Londres</option>
+                                <option value="Berlin" <?= city_selected('Berlin', $city) ?>>Berlin</option>
+                                <option value="Brasilia" <?= city_selected('Brasilia', $city) ?>>Brasilia</option>
+                                <option value="Maputo" <?= city_selected('Maputo', $city) ?>>Maputo</option>
+                                <option value="Luanda" <?= city_selected('Luanda', $city) ?>>Luanda</option>
                             </select>
                         </div>
                 </div>
