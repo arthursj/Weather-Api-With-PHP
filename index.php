@@ -98,5 +98,10 @@ foreach($data['forecast']['forecastday'] as $day) {
             </div>
         </div>
     </div>
+
+    <script>
+        const select = document.querySelector('select');
+    </script>
+    
 </body>
 </html>
