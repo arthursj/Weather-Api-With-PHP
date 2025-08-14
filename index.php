@@ -103,6 +103,7 @@ foreach($data['forecast']['forecastday'] as $day) {
         const select = document.querySelector('select');
         select.addEventListener('change', (e) => {
             const city = e.target.value;
+            window.location.href = `index.php?city=${city}`;
         })
     </script>
     
