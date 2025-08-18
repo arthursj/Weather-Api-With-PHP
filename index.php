@@ -60,14 +60,14 @@ function city_selected($city, $selected_city) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>API</title>
 </head>
-<body>
+<body class="bg-dark text-white">
     
     <div class="container-fluid mt-5">
         <div class="row justify-content-center mt-5">
@@ -75,7 +75,7 @@ function city_selected($city, $selected_city) {
 
                 <div class="row">
                     <div class="col-9">
-                        <h3>Tempo para a cidade <strong><?= $location['name'] ?></strong></h3>
+                        <h3>Tempo para a cidade: <strong><?= $location['name'] ?></strong></h3>
                         <p class="my-2">Região: <?= $location['region'] ?> | <?= $location['country'] ?> | <?= $location['current_time'] ?> | Previsão para: <strong><?= $days ?> dias</strong></p>
                     </div>
                         <div class="col-3 text-end">
@@ -98,7 +98,7 @@ function city_selected($city, $selected_city) {
                 <!-- current -->
                 <?php
                    $weather_info = $current;
-                   include 'inc/weather_info.php' 
+                   include 'inc/weather_info.php'; 
                 ?>
 
                 <!-- forecast -->
@@ -107,7 +107,7 @@ function city_selected($city, $selected_city) {
                         $weather_info = $day;
                         include 'inc/weather_info.php'; 
                     ?>
-                <?php endforeach ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
